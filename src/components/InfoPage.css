@@ -1,0 +1,33 @@
+.info-page {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .info-page h2 {
+    font-size: 36px;
+    color: #00b4d8;
+    margin-bottom: 20px;
+  }
+  
+  .info-page h3 {
+    font-size: 28px;
+    margin-top: 30px;
+  }
+  
+  .info-page p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .info-page ul {
+    padding-left: 20px;
+    text-align: left;
+  }
+  
+  .info-page li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  

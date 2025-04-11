@@ -1,0 +1,25 @@
+.glossary-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #000; 
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .glossary-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .glossary-term {
+    margin-bottom: 12px;
+    background: #fff;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  }
+  
+  .glossary-term strong {
+    color: #0074cc;
+  }

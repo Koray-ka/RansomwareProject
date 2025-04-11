@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import InfoPage from './components/InfoPage';
+import QuizPage from './components/QuizPage';
+import GlossaryPage from './components/GlossaryPage';
+import Navbar from './components/Navbar'; 
+//code above shows all imports of each web page and their respective files in app.js
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/info" element={<InfoPage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/glossary" element={<GlossaryPage />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+//code above shows the routes for each page so that it connects the page of front end together.
